@@ -1,5 +1,8 @@
-package com.example.demo.store;
+package com.example.demo;
 
+import com.example.demo.store.Flower;
+import com.example.demo.store.FlowerColor;
+import com.example.demo.store.FlowerType;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
