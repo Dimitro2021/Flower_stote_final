@@ -7,4 +7,5 @@ public class PaperDecorator implements ItemDecorator{
     public double decorate(Item item) {
         return item.getPrice() + 13;
     }
+
 }

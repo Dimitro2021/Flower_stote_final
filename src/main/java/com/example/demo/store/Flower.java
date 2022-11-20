@@ -1,5 +1,6 @@
 package com.example.demo.store;
 
+import com.example.demo.item.Item;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import lombok.Setter;
 
 
 @Setter @AllArgsConstructor @NoArgsConstructor
-public class Flower {
+public class Flower extends Item {
 //    @Id
 //    @SequenceGenerator(
 //            name = "flower_sequence",
