@@ -1,8 +1,12 @@
 package com.example.demo.order;
 
+import com.example.demo.delivery.DHLDDeliveryStrategy;
 import com.example.demo.delivery.Delivery;
 import com.example.demo.item.Item;
 import com.example.demo.payment.Payment;
+import com.example.demo.store.Flower;
+import com.example.demo.store.FlowerColor;
+import com.example.demo.store.FlowerType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,9 +24,10 @@ public class Order {
     public void SetDeliveryStrategy(Delivery del){
         this.delivery = del;
     }
-    public int CalculateTotalPrice(){
-        int price = 0;
+    public double CalculateTotalPrice(){
+        double price = 0;
         for (Item item: items) {
+            System.out.println(item.getPrice());
             price += item.getPrice();
         }
         return price;
@@ -39,6 +44,7 @@ public class Order {
     public void removeFlower(Item item){
         this.items.remove(item);
     }
+
 
 
 }
